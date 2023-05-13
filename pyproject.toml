@@ -1,0 +1,16 @@
+[tool.black]
+line-length = 100
+target-version = ['py310']
+experimental_string_processing = true
+
+[tool.ruff]
+line-length = 100
+
+[tool.commitizen]
+version = "0.0.1"
+tag_format = "v$version"
+version_files = [
+  "pyproject.toml:version",
+  "app/main.py:APP_VERSION"
+]
+update_changelog_on_bump = true

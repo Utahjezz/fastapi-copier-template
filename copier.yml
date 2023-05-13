@@ -1,0 +1,14 @@
+# wizard
+app_name:
+    type: str
+    help: What is your application name (snake case)?
+
+fastapi_version:
+    type: str
+    help: What is the FastAPI version you want to use?
+    default: 0.95.*
+
+uvicorn_version:
+    type: str
+    help: What is the Uvicorn version you want to use?
+    default: 0.21.*
